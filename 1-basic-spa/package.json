@@ -1,0 +1,12 @@
+{
+  "name": "basic-spa",
+  "version": "1.0.0",
+  "main": "api.js",
+  "license": "MIT",
+  "dawson": {
+    "root": "assets"
+  },
+  "dependencies": {
+    "babel-preset-dawson": "^0.1.0"
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>What time is it?</title>
+  </head>
+  <body>
+    <h1>What time is it?</h1>
+    <span id="time">...</span>
+    <script>
+      fetch('/prod/time', {
+        headers: { 'Content-type': 'application/json' }
+      })
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('time').innerHTML = data.date;
+      })
+      .catch(() => {
+        alert('Fetch error');
+      });
+    </script>
+  </body>
+</html>

@@ -1,3 +1,6 @@
+.env
+.dawson-dist
+
 # Logs
 logs
 *.log

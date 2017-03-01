@@ -1,5 +1,6 @@
+import path from 'path';
 import pug from 'pug';
-const template = pug.compileFile(__dirname + '/template.pug');
+const template = pug.compileFile(path.join(__dirname, 'template.pug'));
 
 export function homepage (event) {
   return template({
@@ -7,5 +8,5 @@ export function homepage (event) {
   });
 }
 homepage.api = {
-  path: ''
+  path: 'hello/{name}'
 };

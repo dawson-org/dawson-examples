@@ -1,5 +1,5 @@
 {
-  "name": "0-basic-srp-pug",
+  "name": "basic-srp-pug",
   "version": "1.0.0",
   "description": "Server-rendered pages example, using pug",
   "main": "api.js",
@@ -7,5 +7,8 @@
   "license": "MIT",
   "dependencies": {
     "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {
+    "babel-preset-dawson": "^0.1.0"
   }
 }
