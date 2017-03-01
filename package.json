@@ -6,9 +6,9 @@
   "author": "Simone Lusenti <simone@plasticpanda.com>",
   "license": "MIT",
   "scripts": {
-    "format": "prettier-eslint --write */*.js",
-    "pre-commit": "npm run format"
+    "format": "./node_modules/.bin/prettier-eslint --write */*.js"
   },
+  "pre-commit": ["format"],
   "dependencies": {
     "eslint": "^3.16.1",
     "eslint-config-semistandard": "^7.0.0",
