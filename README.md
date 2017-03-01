@@ -17,7 +17,7 @@ Subsequent deploys will take ~2 minutes.
 
 ## Index
 
-| Example name  | Project Type | CloudFront? | Custom Resources | Description |
-| ------------- | ------------ | ----------- | ---------------- | ----------- |
-| [`0-basic-srp-pug`](0-basic-srp-pug) | Server-rendered pages | yes |  | Simple app that renders pug templates server-side |
-| [`1-basic-spa`](1-basic-spa) | Single-page-app | yes |  | Basic Single-page-app that serves an index.html file which gets information from the API |
+| Example name  | Project Type | CloudFront? | Custom Resources | Description | Link |
+| ------------- | ------------ | ----------- | ---------------- | ----------- | ---- |
+| [`0-basic-srp-pug`](0-basic-srp-pug) | Server-rendered pages | yes |  | Simple app that renders pug templates server-side | [Link](https://d1pxopg24eq7dd.cloudfront.net/hello/bar) |
+| [`1-basic-spa`](1-basic-spa) | Single-page-app | yes |  | Basic Single-page-app that serves an index.html file which gets information from the API | [Link](https://d27t71oh6azhyg.cloudfront.net/) |
