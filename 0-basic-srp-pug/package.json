@@ -1,0 +1,11 @@
+{
+  "name": "0-basic-srp-pug",
+  "version": "1.0.0",
+  "description": "Server-rendered pages example, using pug",
+  "main": "api.js",
+  "author": "Simone Lusenti <simone@plasticpanda.com>",
+  "license": "MIT",
+  "dependencies": {
+    "pug": "^2.0.0-beta11"
+  }
+}
