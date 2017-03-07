@@ -15,10 +15,11 @@ myfunction.api = {
 def myfunction2(event, context):
     """ This function is dawson-valid """
     print(event, context)
-    return "Hello world 2"
+    return { "hi": "Hello world JSON" }
 
 myfunction2.api = {
-    "path": "test2"
+    "path": "test2",
+    "responseContentType": "application/json"
 }
 
 def myfunction3(event, context):
