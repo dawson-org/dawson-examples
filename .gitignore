@@ -2,7 +2,6 @@
 
 .env
 .dawson-dist
-.dawson-dist.zip
 
 # Logs
 logs
@@ -41,5 +40,3 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
-
-*.pyc
