@@ -43,3 +43,41 @@ def myfunctionWithError(event, context):
 myfunctionWithError.api = {
     "path": "testError"
 }
+
+def myEventHandler(event):
+    print "In event handler"
+    print(event)
+    return "Ok"
+
+myEventHandler.api = {
+    "path": False
+}
+
+def customTemplateFragment():
+    return {
+        "Resources": {
+            "MyBucket": {
+              "DependsOn": "MyBucketPermission",
+              "Type": 'AWS::S3::Bucket',
+              "Properties": {
+                "NotificationConfiguration": {
+                  "LambdaConfigurations": [{
+                    "Event": "s3:ObjectCreated:*",
+                    "Function": { 'Fn::Sub': '${LambdaMyEventHandler}.Arn}' }
+                  }]
+                }
+              }
+            },
+            "MyBucketPermission": {
+              "Type": 'AWS::Lambda::Permission',
+              "Properties": {
+                "Action": 'lambda:invokeFunction',
+                "FunctionName": { "Ref": "LambdaMyEventHandler" },
+                "Principal": 's3.amazonaws.com'
+              }
+            }
+        },
+        "Outputs": {
+            "MyBucket": { "Value": "MyBucket" }
+        }
+    }
