@@ -1,3 +1,5 @@
+.AppleDouble*
+
 .env
 .dawson-dist
 .dawson-dist.zip
