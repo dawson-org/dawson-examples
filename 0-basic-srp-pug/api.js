@@ -13,7 +13,7 @@ greet.api = {
 
 export function index (event) {
   return `
-  It worked! Navigate to /hello/<your name> :)
+  It worked! Navigate to /hello/your-name :)
 `;
 }
 index.api = {
