@@ -1,5 +1,3 @@
-
-
 // $ curl -X GET https://$API_ID.execute-api.$AWS_REGION.amazonaws.com/prod/wildcardGet/xxx
 // $ curl -X GET https://$API_ID.execute-api.$AWS_REGION.amazonaws.com/prod/wildcardGet/xxx/asd
 // $ curl -X GET https://$API_ID.execute-api.$AWS_REGION.amazonaws.com/prod/wildcardGet/bar/123/abc
@@ -36,7 +34,7 @@ wildcardAnyExample.api = {
 
 export function index (event) {
   return `
-  It worked! Navigate to /hello/your-name :)
+  It worked! Check api.js for sample URLs to visit :)
 `;
 }
 index.api = {
