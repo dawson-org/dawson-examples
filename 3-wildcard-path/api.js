@@ -21,14 +21,14 @@ anyExample.api = {
   method: 'ANY'
 };
 
-// $ curl -X GET https://$API_ID.execute-api.$AWS_REGION.amazonaws.com/prod/widcardAny/xxx
-// $ curl -X POST https://$API_ID.execute-api.$AWS_REGION.amazonaws.com/prod/widcardAny/xxx/asd
-// $ curl -X DELETE https://$API_ID.execute-api.$AWS_REGION.amazonaws.com/prod/widcardAny/xxx/asd
+// $ curl -X GET https://$API_ID.execute-api.$AWS_REGION.amazonaws.com/prod/wildcardAny/xxx
+// $ curl -X POST https://$API_ID.execute-api.$AWS_REGION.amazonaws.com/prod/wildcardAny/xxx/asd
+// $ curl -X DELETE https://$API_ID.execute-api.$AWS_REGION.amazonaws.com/prod/wildcardAny/xxx/asd
 export function wildcardAnyExample (event) {
   return `<pre>${JSON.stringify(event, null, 2)}</pre>`;
 }
 wildcardAnyExample.api = {
-  path: 'widcardAny/{args2+}',
+  path: 'wildcardAny/{args2+}',
   method: 'ANY'
 };
 
