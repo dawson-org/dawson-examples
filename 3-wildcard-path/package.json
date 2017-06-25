@@ -1,0 +1,11 @@
+{
+  "name": "dawson-example-3",
+  "dawson": {
+    "cloudfront": {
+      "default": false
+    }
+  },
+  "devDependencies": {
+    "babel-preset-dawson": "^1.0.0"
+  }
+}
